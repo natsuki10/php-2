@@ -22,10 +22,6 @@
             $buzzNum = $_POST['buzz_num'];
             if(!ctype_digit($fizzNum) || !ctype_digit($buzzNum)) {
                 echo '整数値を入力してください';
-            } elseif(!is_numeric($fizzNum) || !is_numeric($buzzNum)) {
-                echo '整数値を入力してください';
-            } elseif(empty($fizzNum) || empty($buzzNum)) {
-                echo '整数値を入力してください';
             } else {
             $fizzNum = (int)$fizzNum;
             $buzzNum = (int)$buzzNum;
